@@ -1,0 +1,14 @@
+% include("header", title="Users")
+    <main>
+        <div id="users">
+            % for user in users:
+                <div class="item">
+
+                    <div>id: {{ user["id"] }}</div>
+                    <div>Email: {{ user["email"] }}</div>
+
+                </div>
+            % end
+        </div>
+    </main>
+% include("footer")
